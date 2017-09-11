@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Tutorial</title>
+    </head>
+    <body>
+        <h1>DOM Lesson 1</h1>
+        <h2 id="mainTitle"></h2>
+
+        <script type="text/javascript">
+            //Title of the Title
+            document.getElementById("mainTitle").innerHTML= prompt("Set the Main Title to Hello World!");
+            //Color of the Title of the Title
+            document.getElementById("mainTitle").style.color= prompt("Set the color to the title:");
+            //Set the border around the Title. Example syntax: solid 8px black
+            document.getElementById("mainTitle").style.border= prompt("Set the borders. Syntax: solid px color");
+            //Set the shadow for the Title. Syntax: htoffsetpx vtoffsetpx blurdragpx color. Syntax example: 8px 6px 4px black
+            document.getElementById("mainTitle").style.textShadow= prompt("Set the shadow for the text. Syntax: px px px color");
+            //Set the font size for the Title. Syntax: value'unit. Syntax example: 4px
+            document.getElementById("mainTitle").style.fontSize= prompt("Set font size:")
+            //Set the shadow to the border. Syntax: htoffsetpx vtoffsetpx blurdragpx color. Syntax example: 8px 6px 4px blue
+            document.getElementById("mainTitle").style.boxShadow= prompt("Set the shadow for the border. Syntax: px px px color");
+            //Set a background for the text, just write the url 
+            document.getElementById("mainTitle").style.backgroundImage = "url(" + prompt("Link an image:") + ")";
+
+        </script>
+    </body>
+</html>
