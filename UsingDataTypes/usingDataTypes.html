@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Using Data Types with DOM</title>
+    </head>
+    <body>
+        <h1 id="myName">Hello my name is </h1>
+
+        <script type="text/javascript">
+            var name = document.getElementById("myName").innerHTML;
+            document.getElementById("myName").innerHTML = name + prompt("Enter name");
+
+            //document.getElementById("myName").innerHTML += prompt("Enter name");
+        </script>
+    </body>
+</html>
