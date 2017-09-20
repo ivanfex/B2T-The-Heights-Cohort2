@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Get Day of the Week</title>
+    </head>
+    <body>
+        <h1 id="day"></h1>
+        <script type="text/javascript">
+            var CurrentDay = new Date().getDay();
+
+            switch (CurrentDay) {
+                case 0:
+                    var DayMessage = "Happy Sunday!";
+                    break;
+                case 1:
+                    var DayMessage = "Happy Monday!";
+                    break;
+                case 2:
+                    var DayMessage = "Happy Tuesday!";
+                    break;
+                case 3:
+                    var DayMessage = "Happy Wednesday!";
+                    break;
+                case 4:
+                    var DayMessage = "Happy Thursday!";
+                    break;
+                case 5:
+                    var DayMessage = "Happy Friday!";
+                    break;
+                case 6:
+                    var DayMessage = "Happy Saturday!";
+                    break;
+                }
+                
+                document.getElementById("day").innerHTML = DayMessage;
+        </script>
+    </body>
+</html>

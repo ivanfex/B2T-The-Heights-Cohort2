@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Find the Largest Number</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var numbers = [0, 0, 0];
+            numbers[0] = prompt("Give me the first number");
+            numbers[1] = prompt("Give me the second number");
+            numbers[2] = prompt("Give me the third number");
+
+            var theLargest = Math.max.apply(Math, numbers);
+            console.log(theLargest + " is the largest number");
+        </script>
+    </body>
+</html>
