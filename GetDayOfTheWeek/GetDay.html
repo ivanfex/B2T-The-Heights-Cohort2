@@ -6,8 +6,10 @@
     <body>
         <h1 id="day"></h1>
         <script type="text/javascript">
+            //Create a variable to contain the current day of the week
             var CurrentDay = new Date().getDay();
 
+            //Getting the day of the week in a numeric value and assigning each return value of CurrentDay to a message
             switch (CurrentDay) {
                 case 0:
                     var DayMessage = "Happy Sunday!";
@@ -31,7 +33,8 @@
                     var DayMessage = "Happy Saturday!";
                     break;
                 }
-                
+
+                //Modifying the h1 in the body to display the day of the week
                 document.getElementById("day").innerHTML = DayMessage;
         </script>
     </body>

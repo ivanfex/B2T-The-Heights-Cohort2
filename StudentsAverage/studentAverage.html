@@ -5,14 +5,20 @@
     </head>
     <body>
         <script type="text/javascript">
+            //Array with all the student grades
             var grade = [80, 77, 88, 95, 68];
+            //Creating an empty variable to contain the average grade
             var theAverage = 0;
+            //Creating a variable to contain the sum of all the grades
             var getGrades = 0;
+            //Iterates through the array getting the grade and adding it to getGrades
             for(var i = 0; i < grade.length; i++){
                 getGrades += grade[i];
             }
+            //The average is equal to the sum of the grades(getGrades) divided by the amount of grades
             theAverage = getGrades/grade.length;
-            console.log(theAverage)
+            //Printing the average to the console
+            console.log(theAverage);
         </script>
     </body>
 </html>

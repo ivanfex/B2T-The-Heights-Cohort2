@@ -5,9 +5,10 @@
     </head>
     <body>
         <script type="text/javascript">
+            //The colors and positions array
             var color = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
             var o = ["th", "st", "nd", "rd"];
-
+            //Iterates through the array and setting the right suffix to each position
             for (var i = 0; i < color.length; i++){
                 /*
                 if (i == 0){
@@ -25,7 +26,7 @@
                 } else {
                     var suffix = o[0];
                 }
-
+                //Concatenating the color, suffix and rest of the sentence to the console
                 console.log((i + 1 + suffix + " choice is ") + color[i]);
             }
         </script>
