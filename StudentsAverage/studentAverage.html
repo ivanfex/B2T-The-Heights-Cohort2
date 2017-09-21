@@ -18,7 +18,20 @@
             //The average is equal to the sum of the grades(getGrades) divided by the amount of grades
             theAverage = getGrades/grade.length;
             //Printing the average to the console
-            console.log(theAverage);
+            var letterGrade = "";
+
+            if (theAverage < 60){
+                letterGrade = "F";
+            }else if (theAverage <= 70) {
+                letterGrade = "D";
+            }else if(theAverage < 80) {
+                letterGrade = "C";
+            }else if (theAverage < 90) {
+                letterGrade = "B"
+            }else if (theAverage >= 90) {
+                letterGrade = "A";
+            }
+            console.log(letterGrade);
         </script>
     </body>
 </html>
