@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <!-- The section contains the hexagon tiles and the hexcity title-->
         <section class="hex clearfix">
             <script type="text/javascript" src="script.js"></script>
             <div class="hex-grid-top">
@@ -27,15 +28,16 @@
                 <div class="hexagon hexagon-scale"><div class="hexagon-in1"><div class="hexagon-in2 red"><img src="" id="c3" onclick="levelUp(this)"></div></div></div>
                 <div class="hexagon hexagon-scale"><div class="hexagon-in1"><div class="hexagon-in2 red"><img src="" id="c4" onclick="levelUp(this)"></div></div></div>
             </div>
+            <h1>HEXCITY</h1>
         </section>
         <div class="infoDisplay">
             <h3 id="resDisplay"></h3>
             <h3 id="populDisplay"></h3>
-            <h3 id="protecDisplay"></h3>
+            <h3 id="protecDisplay"></32>
             <h3 id="politDisplay"></h3>
             <h3 id="techDisplay"></h3>
             <form>
-                <select id="factions">
+                <select id="factions" class="fontmove">
                     <option value="resources">resources</option>
                     <option value="population">population</option>
                     <option value="protection">protection</option>
@@ -44,9 +46,8 @@
                 </select>
             </form>
             <br>
-            <input type="button" value="Level Up Faction" onclick="">
+            <input type="button" value="Level Up Faction" onclick="upFact()" class="fontmove">
         </div>
-
         <script type="text/javascript" src="script.js"></script>
     </body>
 </html>

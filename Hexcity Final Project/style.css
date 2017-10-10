@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'hexahexa';
+    src: url('Assets/Fonts/hexagon.TTF');
+}
+@font-face {
+    font-family: 'hs';
+    src: url('Assets/Fonts/hs.ttf');
+}
+body{
+    border: 12px solid transparent;
+    padding: 18px;
+    border-image: url(Assets/UI/panel_brown.png) 10 stretch;
+    background-color: #97714a;
+    margin: 0px;
+}
 .hexagon {
     -webkit-transform: rotate(120deg);
        -moz-transform: rotate(120deg);
@@ -89,12 +104,38 @@ img{
 h3, form{
     margin: 0px;
     text-align: center;
+    font-family: 'hs';
 }
 button{
     text-align: center;
-    padding: 8px;
 }
 .infoDisplay{
     text-align: center;
+    margin-top: 12px;
+    display: inline-flex;
+    border: 12px solid transparent;
+    padding: 10px;
+    border-image: url(Assets/UI/panel_beige.png) 10 stretch;
+    background-color: #d3bf8f;
+}
+h1{
+    font-size: 44px;
+    text-align: center;
     margin: 0px;
+    padding: -10px;
+    text-shadow: 2px 2px #27AE60;
+    font-family: 'hexahexa';
+}
+.fontmove{
+    font-family : 'hs';
+    font-size: 1em;
+    background-color: #cbb98e;
+    margin: 4px;
+}
+section{
+    border: 12px solid transparent;
+    padding: 10px;
+    border-image: url(Assets/UI/panel_beige.png) 10 stretch;
+    background-color: #d3bf8f;
+    display: block;
 }
