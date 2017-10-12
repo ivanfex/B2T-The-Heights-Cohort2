@@ -266,7 +266,7 @@ randomBackgrounds();
     function upgradeTile(upHex){
         switch(upHex.type){
             case 'resources':
-                if(resources > resLevelCap){
+                if(resources >= resLevelCap){
                     resources -= resLevelCap;
                     upHex.level += 1;
                     resLevelCap *= 1.25;
@@ -274,7 +274,7 @@ randomBackgrounds();
                 }
                 break;
             case 'population':
-                if(population > populLevelCap){
+                if(population >= populLevelCap){
                     population -= populLevelCap;
                     upHex.level += 1;
                     populLevelCap *= 1.25;
@@ -282,7 +282,7 @@ randomBackgrounds();
                 }
                 break;
             case 'protection':
-                if(protecPoints > protecLevelCap){
+                if(protecPoints >= protecLevelCap){
                     protecPoints -= protecLevelCap;
                     upHex.level += 1;
                     protecLevelCap *= 1.25;
@@ -290,7 +290,7 @@ randomBackgrounds();
                 }
                 break;
             case 'politics':
-                if(politPoints > politLevelCap){
+                if(politPoints >= politLevelCap){
                     politPoints -= politLevelCap;
                     upHex.level += 1;
                     politLevelCap *= 1.25;
@@ -298,7 +298,7 @@ randomBackgrounds();
                 }
                 break;
             case 'technology':
-                if(techPoints > techLevelCap){
+                if(techPoints >= techLevelCap){
                     techPoints -= techLevelCap;
                     resources -= resLevelCap;
                     upHex.level += 1;
